@@ -18,6 +18,6 @@ from django.contrib import admin
 from lists import views
 
 urlpatterns = [
-    #url(r'^admin/', admin.site.urls),
+    # match a request to the root url to the view function 'home_page'
     url(r'^$', views.home_page, name='home')
 ]
