@@ -17,12 +17,7 @@ class HomePageTest(TestCase):
     request   = HttpRequest()
 
     # act
-    response  = home_page(request)
+    response  = self.client.get('/')
 
     # assert
-    received_bytes  = response.content
-    html            = received_bytes.decode('utf8')
-    self.assertTrue(html.startswith('<html>'))
-    self.assertIn('<title>To-Do lists</title>', html)
-    self.assertTrue(html.endswith('</html>'))
-
+    self.assertTemplateUsed(response, 'home.html')
