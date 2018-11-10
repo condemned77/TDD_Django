@@ -1,10 +1,5 @@
-attrs==17.4.0
-h2==2.6.2
-hpack==3.0.0
-hyper==0.7.0
-hyperframe==3.2.0
-pluggy==0.6.0
-py==1.5.2
-pytest==3.3.1
-six==1.11.0
-virtualenv==15.2.0
+dependencies==0.15
+Django==1.11.16
+pytz==2018.7
+selenium==3.141.0
+urllib3==1.24.1
