@@ -4,5 +4,4 @@ virtualenv
 geckodriver.log
 superlists/__pycache__
 *.pyc
-
 *.swp
